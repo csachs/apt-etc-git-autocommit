@@ -1,0 +1,8 @@
+Package: apt-etc-git-autocommit
+Version: 1.0-1
+Section: admin
+Priority: optional
+Architecture: amd64
+Depends: git (>= 2.0.0)
+Maintainer: Christian Sachs <sachs.christian@gmail.com>
+Description: Will commit all changes by apt* tools to /etc via git automatically via a hook. CC0. Keep security in mind when you use it at your own risk!

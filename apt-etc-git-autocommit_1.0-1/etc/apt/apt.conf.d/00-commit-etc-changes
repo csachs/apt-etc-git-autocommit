@@ -1,0 +1,2 @@
+DPkg::Pre-Invoke {"cd /etc; git init -q; chmod -R 600 .git; git add -A; git -c 'user.name=root' -c 'user.email=root@localhost' commit -a -m '[APT] Commit for spurious changes'; chmod -R 600 .git; exit 0";};
+DPkg::Post-Invoke {"cd /etc; git init -q; chmod -R 600 .git; git add -A; git -c 'user.name=root' -c 'user.email=root@localhost' commit -a -m '[APT] Commit after system configuration changes'; chmod -R 600 .git; exit 0";};
